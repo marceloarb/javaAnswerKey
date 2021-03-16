@@ -2,6 +2,7 @@ package java_2.oop.bank;
 
 public class BankingApp {
 
+
 	public static void main(String[] args) {
 			/*
 				-Create a Bank
@@ -13,5 +14,9 @@ public class BankingApp {
 				-find an account by any of the customer credentials
 				-find an account by account number.
 		 	*/
+		Bank chase = new Bank();
+		Customer marcelo = new Customer("Marcelo","Barbosa",876543765,"30-03-1994",100000.00 );
+		Account marceloAccount = chase.openAccount(new Account(marcelo,chase));
+		System.out.println(chase.getAccountByCustomer(marcelo));
 	}
 }

@@ -1,7 +1,11 @@
 package java_2.oop.bank;
 
+import java.util.ArrayList;
+
+
 public class Bank {
 
+    private ArrayList<Account> accounts = new ArrayList<>();
 	/*
 		Properties:
 			accounts;
@@ -12,4 +16,16 @@ public class Bank {
 	 		getAccountByCustomer(Customer);
 	 		getAccountByNumber(acctNum);
 	 */
+    public Account openAccount(Account account){
+        accounts.add(account);
+        return account;
+    }
+    public Account getAccountByCustomer(Customer customer){
+        for(Account account : accounts){
+            if(account.getAccountHolder().equals(customer)){
+                return account;
+            }
+        }
+        return null;
+    }
 }

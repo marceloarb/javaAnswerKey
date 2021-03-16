@@ -1,8 +1,29 @@
 package java_2.oop.bank;
 
-public class Account {
+import java.util.Random;
 
-	/*
+public class Account{
+    private Bank bank;
+    private Customer accountHolder;
+    private final long accountNumber;
+
+    public Account(Customer customer, Bank bank) {
+        this.accountHolder = customer;
+        this.bank = bank;
+        this.accountNumber = getAccountNumber();
+    }
+    private Long getAccountNumber() {
+        return new Random().nextLong();
+    }
+
+    public Bank getBank() {
+        return bank;
+    }
+
+    public Customer getAccountHolder() {
+        return accountHolder;
+    }
+    /*
 		Properties:
 			Bank (bank where the account is stored)
 			accountNumber

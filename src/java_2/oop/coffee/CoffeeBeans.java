@@ -2,6 +2,14 @@ package java_2.oop.coffee;
 //https://www.homegrounds.co/best-coffee-beans-bucket-list/
 
 class CoffeeBeans {
+    private final String beanName;
+    private final String origin;
+
+    CoffeeBeans(String beanName, String origin) {
+        this.beanName = beanName;
+        this.origin = origin;
+    }
+
 /*	Properties :
 	beanName
 	origin

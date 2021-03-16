@@ -11,12 +11,12 @@ public class CoffeeApp {
 	-
  */
 
-		CoffeeBeans java = new CoffeeBeans();
+		CoffeeBeans java = new CoffeeBeans("java", "Don't care");
 		Cup mug = new Cup();
-		CoffeeMaker keureg = new CoffeeMaker();
-//		keureg.powerOn();  (Defined in the Machine Interface)
+		CoffeeMaker keureg = new CoffeeMaker("keureg","expresso",false);
+		keureg.powerOn(); // (Defined in the Machine Interface)
 		mug = keureg.brew(java,mug);
 		mug.drink();
-//		keureg.powerOff(); (Defined in the Machine Interface);
+		keureg.powerOff();// (Defined in the Machine Interface);
 	}
 }
