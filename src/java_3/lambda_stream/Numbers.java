@@ -16,15 +16,15 @@ class Numbers {
     }
 
 
-    static boolean isOdd(int i, EvenOrOdd oddNumber) {
+    static boolean isOdd(int i, Odd oddNumber) {
         //determine if the value at the index i is odd.  return true if yes, return false if  no.
-        return oddNumber.evenOrOdd(i);
+        return oddNumber.odd(i);
     }
 
 
-    static boolean isEven(int i, EvenOrOdd evenNumber) {
+    static boolean isEven(int i, Even evenNumber) {
         //determine if the value at the index i is even.  return true if yes, return false if  no.
-        return evenNumber.evenOrOdd(i);
+        return evenNumber.even(i);
     }
 
     static boolean isPrime(int i) {
