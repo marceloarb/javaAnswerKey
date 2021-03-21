@@ -1,6 +1,7 @@
 package java_3.lambda_stream;
 
 import java.util.List;
+import java.util.function.Function;
 
 public class LambdaMain {
 
@@ -21,9 +22,14 @@ public class LambdaMain {
 		Even even = (int i) -> i % 2 == 0;
 		Odd odd = (int i) -> i % 2 != 0;
 
+
+		Numbers.multipled();
+
 		System.out.println(Numbers.added(summing));
 		System.out.println(Numbers.isEven(5,even));
 		System.out.println(Numbers.isOdd(5,odd));
+		System.out.println(Numbers.findMax((n1,n2)-> n1-n2));
+
 			/* e.g.
 			Numbers.lambdaCompute((x,y) -> x + y)) => 5661
 			Numbers.lambdaCompute( (x,y) -> x - y)) => -5641

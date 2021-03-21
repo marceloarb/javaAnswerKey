@@ -1,6 +1,7 @@
 package java_3.lambda_stream;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 class Numbers {
@@ -53,9 +54,9 @@ class Numbers {
         return 0;
     }
 
-    static int findMax() {
+    static int findMax(Comparator<Integer> comparator) {
          //return the maximum value in the list.
-        return 0;
+        return nums.stream().max(comparator).get();
     }
 
     static int findMin() {
