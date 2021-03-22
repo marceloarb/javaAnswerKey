@@ -29,6 +29,7 @@ public class LambdaMain {
 		System.out.println(Numbers.isEven(5,even));
 		System.out.println(Numbers.isOdd(5,odd));
 		System.out.println(Numbers.findMax((n1,n2)-> n1-n2));
+		System.out.println("Hello world");
 
 			/* e.g.
 			Numbers.lambdaCompute((x,y) -> x + y)) => 5661
