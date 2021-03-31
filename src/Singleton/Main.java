@@ -7,5 +7,7 @@ public class Main {
         Singleton singleton2 = Singleton.getInstance();
         System.out.println(singleton2);
         System.out.println(singleton2);
+        System.out.println(singleton2);
+        System.out.println(singleton2);
     }
 }
