@@ -6,6 +6,5 @@ public class Main {
         System.out.println(singleton1);
         Singleton singleton2 = Singleton.getInstance();
         System.out.println(singleton2);
-
     }
 }
